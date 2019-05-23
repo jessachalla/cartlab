@@ -11,7 +11,7 @@ cartItem.get('/cart-items', (req, res) => {
 });
 
 cartItem.get('/cart-items/:id', (req, res) => {
-    let arrayIndex = req.params.idgit;
+    let arrayIndex = req.params.id;
     if (cartData[arrayIndex]) {
         res.send(cartData[arrayIndex]);
     } else {
