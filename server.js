@@ -9,6 +9,6 @@ app.get('/api', (req, res) => {
 const cartItems = require('./cartItems');
 app.use('/', cartItems);
 
-const port = 3002;
+const port = 3003;
 
 app.listen(port, () => console.log(`listening on port: http://localhost:${port}`));
